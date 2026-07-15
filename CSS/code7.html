@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            padding: 20px;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            padding: 30px;
+        }
+
+        /* .box:hover {
+            background-color: black;
+            color: yellow;
+        } */
+        p {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            /* left: 100%; */
+            rotate: 0;
+            scale: 0;
+            transition: all .6s linear;
+
+        }
+
+        .box:hover p {
+            rotate: 360deg;
+            scale: 1;
+            left: 10%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dicta laborum officiis eos deserunt fugit
+            quaerat culpa consectetur commodi obcaecati delectus, recusandae incidunt quas aliquam error sapiente
+            tempore placeat perspiciatis.</p>
+    </div>
+</body>
+
+</html>
